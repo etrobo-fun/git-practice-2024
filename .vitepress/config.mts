@@ -8,21 +8,24 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Members',
+        link: '/members/index',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'あずらた', link: '/members/azurata' },
+          // { text: '名前', link: '/members/<作成したファイル名>' },
         ]
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/etrobo-fun' }
     ]
-  }
+  },
+  head: [
+    ['meta', {'name': 'robots', 'content': 'noindex'}]
+  ]
 })
