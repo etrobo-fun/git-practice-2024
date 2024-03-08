@@ -13,7 +13,7 @@ export default defineConfig({
     sidebar: [
       {
         text: 'Members',
-        link: '/members/index',
+        link: '/members',
         items: [
           { text: 'あずらた', link: '/members/azurata' },
           // { text: '名前', link: '/members/<作成したファイル名>' },
@@ -27,5 +27,6 @@ export default defineConfig({
   },
   head: [
     ['meta', {'name': 'robots', 'content': 'noindex'}]
-  ]
+  ],
+  base: '/git-practice-2024'
 })
